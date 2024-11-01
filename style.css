@@ -1,0 +1,146 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(223, 223, 223);   
+}
+
+/* Pseudoelemento aplicado ao h1 adicionando conteúdo antes */
+
+header{
+    background-color: rgb(44, 44, 44);
+    padding: 2px;
+}
+
+h1{
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+h1::before{
+    content: "Tema: ";
+    font-weight: 900;
+    color: rgb(15, 122, 223);
+}
+
+h2::after{
+    content: "Alta";
+    color: black;
+    
+}
+
+h3::after{
+    content: "Média";
+    color: black;
+}
+
+h4::after{
+    content: "Baixa";
+    color: black;
+}
+
+header h1::selection{
+    background-color: rgb(15, 122, 225);
+    color: rgb(15, 15, 15);
+}
+
+h2::selection{
+    background-color: black;
+    color: blueviolet;
+}
+
+h3::selection{
+    background-color: black;
+    color: blueviolet;
+}
+
+h4::selection{
+    background-color: black;
+    color: blueviolet;
+}
+
+p::selection{
+    background-color: black;
+    color: blueviolet;
+}
+
+nav ul{
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(44, 44, 44);
+    margin: 10px;
+    padding: 7px;
+}
+
+nav ul li{
+    margin: 0 10px;
+
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: bisque;
+    padding: 10px;
+    transition: background-color 0.5s;
+}
+
+nav ul li a:hover{
+    background-color: rgb(107, 0, 0);
+}
+
+nav ul li a:active{
+    background-color: rgb(50, 100, 0);
+}
+
+nav ul li a:visited{
+    background-color: rgb(119, 119, 119);
+    color: rgb(219, 219, 219);
+}
+
+p::first-letter{
+    font-size: 1.5em;
+}
+
+h2{
+    text-align: center;
+    color: rgb(15, 122, 223);
+}
+
+h3{
+    text-align: center;
+    color: rgb(15, 122, 223);
+    font-size: 23px;
+}
+
+h4{
+    text-align: center;
+    color: rgb(15, 122, 223);
+    font-size: 23px;
+}
+
+p{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+footer{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: rgb(45, 45, 45);
+    color: aliceblue;
+    padding: 15px;
+}
+
+img{
+    width: 40%;
+    height: 40%;
+    margin-left: 30%;
+}
+
+@media (max-width: 468px){
+    .body{
+        font-size: 60%;
+    }
+}
